@@ -51,3 +51,29 @@ diselesaikan di luar kelas sampai pukul 23.59 hari yang sama.
 Folder `worksheet-p4/` di dalam repositori GitHub Anda sendiri, berisi
 `profil.html`, `css/`, `media/`, dan `bukti/`. Sudah di-commit dan di-push
 sebelum **pukul 23.59 hari yang sama**. Tidak ada perpanjangan.
+
+# PABW — Muhammad Hafizh Dermawan — 25523162
+
+Repo ini memuat pekerjaan mata kuliah Pengembangan Aplikasi Berbasis Web, satu folder untuk setiap pertemuan.
+
+## Pertemuan 4 — Halaman Profil Saya
+
+Halaman ini adalah profil pribadi Muhammad Hafizh Dermawan, mahasiswa Informatika Universitas Islam Indonesia.
+
+### Arah visual
+
+Arah visual halaman: hangat dan sederhana.
+
+Warna utama yang digunakan adalah cream, terinspirasi dari warna vest pada foto profil. Warna latar terang adalah putih cream, warna gelap adalah coklat tua, dan warna utama adalah cream.
+
+Halaman memakai lima berkas CSS: `tokens.css`, `base.css`, `layout.css`, `komponen.css`, dan `tema.css`.
+
+### Struktur tambahan
+
+1. Galeri karya memakai elemen daftar dan gambar untuk menampilkan karya atau proyek.
+2. Sedang dikerjakan memakai elemen `<article>` untuk menjelaskan halaman profil yang sedang dibuat.
+3. Tanya jawab memakai elemen `<details>` dan `<summary>` untuk menjelaskan minat dan proyek yang pernah dibuat.
+
+## Catatan penggunaan AI
+
+AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh isi profil, dan memberi contoh struktur HTML serta CSS. Saya sendiri mengisi data pribadi, memilih warna visual, memasukkan foto, dan menerapkan kode pada halaman profil.
