@@ -16,6 +16,7 @@
        diberi gaya memakai token yang sama, lalu dievaluasi W3C dan WCAG.
 -->
 <html lang="id">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,12 +34,13 @@
   <!-- <link rel="stylesheet" href="css/komponen.css"> -->
   <!-- <link rel="stylesheet" href="css/tema.css"> -->
 </head>
+
 <body>
   <a class="lewati" href="#utama">Lewati ke konten utama</a>
 
   <header class="kepala">
     <!-- ISI 2 — nama Anda, atau nama panggilan yang Anda pakai. -->
-    <h1>Hafizh</h1>
+    <h1>Muhammad Hafizh Dermawan</h1>
     <!-- ISI 3 — satu kalimat tentang diri Anda. -->
     <p class="tagline">Mahasiswa Informatika Universitas Islam Indonesia Semester 3.</p>
     <nav aria-label="Navigasi utama">
@@ -58,16 +60,16 @@
       <figure class="foto">
         <!-- ISI 4 — pakai foto Anda sendiri dengan nama berkas yang sama,
              atau biarkan berkas contoh apa adanya. -->
-        <img src="media/Foto-saya.jpeg"
-             alt="Foto diri Muhammad Hafizh Dermawan memakai kemeja putih."
-             width="480" height="480" loading="lazy">
+        <img src="media/foto-profil.jpeg" alt="Foto diri Muhammad Hafizh Dermawan memakai kemeja putih." width="480"
+          height="480" loading="lazy">
         <figcaption>Foto profil Muhammad Hafizh Dermawan.</figcaption>
       </figure>
 
       <!-- ISI 5 — dua sampai tiga kalimat: asal, minat, dan hal yang
            sedang Anda pelajari. -->
       <p>Saya adalah mahasiswa Program Studi Informatika di Universitas Islam Indonesia.
-  Saya tertarik pada bidang IT, khususnya pemrograman dan problem solving. Saya juga sedang mempelajari pembuatan website.</p>
+        Saya tertarik pada bidang IT, khususnya pemrograman dan problem solving. Saya juga sedang mempelajari pembuatan
+        website.</p>
 
       <table>
         <!-- ISI 6 — judul tabel dan isi minimal tiga baris. -->
@@ -88,12 +90,12 @@
           <tr>
             <th scope="row">Belajar Pemrograman Dasar</th>
             <td>Pembelajar Mandiri</td>
-            <td><time datetime="2026-10">Oktober 2026</time></td>
+            <td><time datetime="2026-09">September 2026</time></td>
           </tr>
           <tr>
-            <th scope="row">Latihan Problem Solving</th>
+            <th scope="row">Latihan HTML, CSS, dan java</th>
             <td>Pembelajar Mandiri</td>
-            <td><time datetime="2026">2026</time></td>
+            <td><time datetime="2026-09">September 2026</time></td>
           </tr>
         </tbody>
       </table>
@@ -120,22 +122,20 @@
 
           <p>
             <label for="nama">Nama lengkap</label>
-            <input id="nama" name="nama" type="text"
-                   autocomplete="name" required>
+            <input id="nama" name="nama" type="text" autocomplete="name" required>
           </p>
 
           <p>
             <label for="email">Email</label>
-            <input id="email" name="email" type="email"
-                   autocomplete="email" required>
+            <input id="email" name="email" type="email" autocomplete="email" required>
           </p>
 
           <p>
             <label for="nim">NIM</label>
             <!-- ISI 8 — ganti angka di dalam pattern dengan NIM Anda sendiri. -->
-            <input id="nim" name="nim" type="text" inputmode="numeric"
-                   pattern="[0-9]{8}" aria-describedby="nim-bantuan" required>
-            <span id="nim-bantuan">Delapan digit angka, contoh 105230102.</span>
+            <input id="nim" name="nim" type="text" inputmode="numeric" pattern="[0-9]{8}" aria-describedby="nim-bantuan"
+              required>
+            <span id="nim-bantuan">Delapan digit angka, contoh 25523162.</span>
           </p>
 
           <p>
@@ -152,6 +152,61 @@
          sebelum tag penutup </main>. Wajib: satu <h2> per bagian, atribut id
          yang belum terpakai, elemen semantik yang berbeda satu sama lain, dan
          gaya memakai token yang sama. Tiga section di atas JANGAN diubah. -->
+        <section id="galeri">
+          <h2>Galeri karya</h2>
+
+          <ul class="galeri">
+            <li>
+              <figure>
+                <img src="media/Karya-1.jpeg" alt="Tangkapan layar sistem aplikasi catering." width="1600" height="1191"
+                  loading="lazy">
+                <figcaption>Sistem aplikasi catering, 2026.</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <img src="media/Karya-2.jpeg" alt="Tangkapan layar sistem aplikasi kasir." width="2560" height="1514"
+                  loading="lazy">
+                <figcaption>Sistem aplikasi kasir, 2026.</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <img src="media/Karya-3.jpeg" alt="Tampilan aplikasi TrashVision." width="542" height="1187"
+                  loading="lazy">
+                <figcaption>Tampilan aplikasi TrashVision, 2025.</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <section id="sedang-dikerjakan">
+          <h2>Sedang saya kerjakan</h2>
+
+          <article>
+            <h3>Halaman profil pribadi</h3>
+            <p>
+              Saya sedang mengembangkan halaman profil pribadi menggunakan HTML,
+              CSS.
+            </p>
+            <p>Dimulai <time datetime="2026-09-25">25 September 2026</time>.</p>
+          </article>
+        </section>
+        <section id="tanya-jawab">
+          <h2>Tanya jawab</h2>
+
+          <details>
+            <summary>Apa yang sedang saya pelajari?</summary>
+            <p>Saya sedang mempelajari Java, HTML, CSS, dan problem solving.</p>
+          </details>
+
+          <details>
+            <summary>Proyek apa yang pernah saya buat?</summary>
+            <p>Saya pernah membuat sistem aplikasi catering, aplikasi kasir, dan tampilan aplikasi TrashVision.</p>
+          </details>
+        </section>
 
   </main>
 
@@ -160,4 +215,5 @@
     <p>Muhammad Hafizh Dermawan · 25523162 · <time datetime="2026">2026</time></p>
   </footer>
 </body>
+
 </html>
