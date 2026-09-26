@@ -76,7 +76,9 @@ Halaman memakai lima berkas CSS: `tokens.css`, `base.css`, `layout.css`, `kompon
 
 ## Catatan penggunaan AI
 
-AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh isi profil, dan memberi contoh struktur HTML serta CSS. Saya sendiri mengisi data pribadi, memilih warna visual, memasukkan foto, dan menerapkan kode pada halaman profil.
+AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh dan membantu menyusun struktur HTML serta CSS, penggunaan design token, flexbox, tema gelap, fokus papan ketik, dan pemeriksaan kesalahan kode.
+
+Saya sendiri mengisi data pribadi, daftar kegiatan dan karya, memilih warna visual, memasukkan foto dan gambar karya, menerapkan serta menyesuaikan kode, dan menguji halaman di browser.
 
 ## Pertemuan 4 — Design Token Halaman Profil
 
@@ -102,3 +104,16 @@ Berkas CSS yang digunakan:
 | `--space-4` | `1rem` | Jarak standar antar elemen |
 
 Kriteria keberhasilan saya: mengubah nilai `--color-primary` di satu tempat harus mengubah warna tombol, tautan, dan penanda pada halaman.
+
+### Galeri karya
+
+Bagian Galeri karya memakai elemen `figure` untuk menampilkan tangkapan layar karya saya beserta `figcaption` sebagai keterangannya. Bagian ini ditujukan untuk pengunjung atau dosen yang ingin melihat hasil proyek saya secara visual.
+
+### Sedang saya kerjakan
+
+Bagian Sedang saya kerjakan memakai elemen `article` karena isinya merupakan informasi mandiri mengenai proyek yang sedang saya kembangkan. Bagian ini membantu pembaca mengetahui aktivitas belajar dan perkembangan proyek saya.
+
+### Tanya jawab
+
+Bagian Tanya jawab memakai elemen `details` dan `summary` agar pembaca dapat membuka jawaban yang ingin diketahui saja. Bagian ini ditujukan untuk menjelaskan secara ringkas materi yang sedang saya pelajari dan proyek yang pernah saya buat.
+
