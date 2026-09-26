@@ -77,3 +77,28 @@ Halaman memakai lima berkas CSS: `tokens.css`, `base.css`, `layout.css`, `kompon
 ## Catatan penggunaan AI
 
 AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh isi profil, dan memberi contoh struktur HTML serta CSS. Saya sendiri mengisi data pribadi, memilih warna visual, memasukkan foto, dan menerapkan kode pada halaman profil.
+
+## Pertemuan 4 — Design Token Halaman Profil
+
+Arah visual halaman saya adalah hangat dan sederhana. Warna utama yang digunakan adalah cokelat `#7A5C4B`, terinspirasi dari warna cream dan cokelat pada foto profil.
+
+Berkas CSS yang digunakan:
+
+- `worksheet-p4/css/tokens.css`
+- `worksheet-p4/css/base.css`
+- `worksheet-p4/css/layout.css`
+- `worksheet-p4/css/komponen.css`
+- `worksheet-p4/css/tema.css`
+
+### Token yang saya tetapkan
+
+| Token | Nilai | Untuk apa |
+|---|---|---|
+| `--color-primary` | `#7A5C4B` | Tombol, tautan, dan penanda |
+| `--color-fg` | `#3B2A22` | Warna teks utama |
+| `--color-bg` | `#FFFDF8` | Latar halaman |
+| `--color-surface` | `#F5E6D3` | Latar kartu dan panel |
+| `--radius-md` | `0.75rem` | Sudut membulat |
+| `--space-4` | `1rem` | Jarak standar antar elemen |
+
+Kriteria keberhasilan saya: mengubah nilai `--color-primary` di satu tempat harus mengubah warna tombol, tautan, dan penanda pada halaman.
