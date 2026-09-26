@@ -122,27 +122,30 @@
         <fieldset>
           <legend>Data pengirim</legend>
 
-          <p>
-            <label for="nama">Nama lengkap</label>
-            <input id="nama" name="nama" type="text" autocomplete="name" required>
+          <p class="form-kolom">
+          <label for="nama">Nama</label>
+          <input id="nama" name="nama" type="text" required>
+          <span class="pesan-galat">Nama wajib diisi.</span>
           </p>
 
-          <p>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
+          <p class="form-kolom">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <span class="pesan-galat">Masukkan alamat email yang valid.</span>
           </p>
 
-          <p>
-            <label for="nim">NIM</label>
-            <!-- ISI 8 — ganti angka di dalam pattern dengan NIM Anda sendiri. -->
-            <input id="nim" name="nim" type="text" inputmode="numeric" pattern="[0-9]{8}" aria-describedby="nim-bantuan"
-              required>
-            <span id="nim-bantuan">Delapan digit angka, contoh 25523162.</span>
+          <p class="form-kolom">
+          <label for="nim">NIM</label>
+          <input id="nim" name="nim" type="text" inputmode="numeric"
+          pattern="[0-9]{8}" aria-describedby="nim-bantuan" required>
+          <span id="nim-bantuan">Delapan digit angka, contoh 25523162.</span>
+          <span class="pesan-galat">NIM harus terdiri dari 8 digit angka.</span>
           </p>
 
-          <p>
-            <label for="pesan">Pesan</label>
-            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+          <p class="form-kolom">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" required></textarea>
+          <span class="pesan-galat">Pesan wajib diisi.</span>
           </p>
 
           <button type="submit">Kirim</button>
@@ -193,7 +196,7 @@
               Saya sedang mengembangkan halaman profil pribadi menggunakan HTML,
               CSS.
             </p>
-            <p>Dimulai <time datetime="2026-09-25">25 September 2026</time>.</p>
+            <p>Dimulai <time datetime="2026-09-23">23 September 2026</time>.</p>
           </article>
         </section>
         <section id="tanya-jawab">
