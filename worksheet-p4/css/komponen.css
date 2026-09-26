@@ -66,3 +66,6 @@ textarea:user-invalid {
 .form-kolom:has(input:user-invalid, textarea:user-invalid) .pesan-galat {
   display: block;
 }
+.lewati {
+  color: var(--color-primary);
+}
