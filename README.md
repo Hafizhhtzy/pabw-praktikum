@@ -46,7 +46,8 @@ AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh dan 
 
 Saya sendiri mengisi data pribadi, daftar kegiatan dan karya, memilih warna visual, memasukkan foto dan gambar karya, menerapkan serta menyesuaikan kode, dan menguji halaman di browser.
 
-## Sketsa
+## Sketsa Kerangka Halaman
+
 ┌──────────────────────────────────────────────┐
 │ Header                                       │
 │ Nama • Navigasi • Tombol Tema                │
