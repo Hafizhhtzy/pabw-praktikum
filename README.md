@@ -46,6 +46,21 @@ AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh dan 
 
 Saya sendiri mengisi data pribadi, daftar kegiatan dan karya, memilih warna visual, memasukkan foto dan gambar karya, menerapkan serta menyesuaikan kode, dan menguji halaman di browser.
 
+## Sketsa
+┌──────────────────────────────────────────────┐
+│ Header                                       │
+│ Nama • Navigasi • Tombol Tema                │
+├───────────────────┬──────────────────────────┤
+│ Kolom kiri        │ Kolom kanan              │
+│ Tentang saya      │ Karya saya               │
+│ Foto profil       │ Hubungi saya             │
+│ Kegiatan          │ Galeri karya             │
+│                   │ Sedang dikerjakan        │
+│                   │ Tanya jawab              │
+├───────────────────┴──────────────────────────┤
+│ Footer: Nama • NIM • Tahun                   │
+└──────────────────────────────────────────────┘
+
 ## Worksheet P5 — Lembar A.1 Kerangka Halaman
 
 | Bagian halaman | Peran | Nilai yang saya pakai |
@@ -54,3 +69,4 @@ Saya sendiri mengisi data pribadi, daftar kegiatan dan karya, memilih warna visu
 | Baris kedua | Isi utama halaman profil | `1fr` |
 | Baris ketiga | Kaki halaman | `auto` |
 | Kolom isi | Informasi profil dan konten utama | `16rem 1fr` |
+
