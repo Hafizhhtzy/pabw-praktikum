@@ -1,23 +1,23 @@
-.galeri {
+body.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+.kepala {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   gap: var(--space-4);
-}
-.kepala {
   padding-block: var(--space-4);
   border-bottom: 1px solid var(--color-border);
 }
 
-.header-baris {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-4);
-  flex-wrap: wrap;
-}
-
 nav ul {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: var(--space-4);
   list-style: none;
   padding: 0;
@@ -31,32 +31,31 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
 main {
-  display: flex;
-  flex-direction: column;
-  gap: var(--section-gap);
+  display: grid;
+  grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+  gap: var(--space-6);
   padding-block: var(--space-6);
 }
 
-.katalog {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-4);
-}
-
-.kartu {
-  flex: 1 1 16rem;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-1);
-  padding: var(--card-pad);
-}
-
-footer {
-  margin-top: var(--space-6);
+.kaki {
   padding-block: var(--space-4);
   border-top: 1px solid var(--color-border);
   color: var(--color-fg);
   font-size: var(--text-sm);
+}
+main > * {
+  min-width: 0;
+}
+
+@media (max-width: 40rem) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  #galeri,
+  #tanya-jawab {
+    grid-column: span 1;
+  }
 }

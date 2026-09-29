@@ -45,3 +45,12 @@ Bagian Tanya jawab memakai elemen `details` dan `summary` agar pembaca dapat mem
 AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh dan membantu menyusun struktur HTML serta CSS, penggunaan design token, flexbox, tema gelap, fokus papan ketik, dan pemeriksaan kesalahan kode.
 
 Saya sendiri mengisi data pribadi, daftar kegiatan dan karya, memilih warna visual, memasukkan foto dan gambar karya, menerapkan serta menyesuaikan kode, dan menguji halaman di browser.
+
+## Worksheet P5 — Lembar A.1 Kerangka Halaman
+
+| Bagian halaman | Peran | Nilai yang saya pakai |
+|---|---|---|
+| Baris pertama | Kepala halaman: nama, navigasi, dan tombol tema | `auto` |
+| Baris kedua | Isi utama halaman profil | `1fr` |
+| Baris ketiga | Kaki halaman | `auto` |
+| Kolom isi | Informasi profil dan konten utama | `16rem 1fr` |
