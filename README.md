@@ -48,6 +48,7 @@ Saya sendiri mengisi data pribadi, daftar kegiatan dan karya, memilih warna visu
 
 ## Sketsa Kerangka Halaman
 
+~~~text
 ┌──────────────────────────────────────────────┐
 │ Header                                       │
 │ Nama • Navigasi • Tombol Tema                │
@@ -61,6 +62,9 @@ Saya sendiri mengisi data pribadi, daftar kegiatan dan karya, memilih warna visu
 ├───────────────────┴──────────────────────────┤
 │ Footer: Nama • NIM • Tahun                   │
 └──────────────────────────────────────────────┘
+~~~
+
+Pada desktop, area isi menggunakan dua kolom: `16rem` dan `1fr`. Pada layar kecil, area isi berubah menjadi satu kolom agar tidak terjadi scroll horizontal.
 
 ## Worksheet P5 — Lembar A.1 Kerangka Halaman
 
