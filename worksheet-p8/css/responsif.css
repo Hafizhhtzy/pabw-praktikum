@@ -1,0 +1,67 @@
+/* dasar: layar sempit */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-6);
+  padding-block: var(--space-6);
+}
+
+main > * {
+  min-width: 0;
+}
+
+/* galeri satu kolom pada ponsel */
+.galeri {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+  list-style: none;
+  padding: 0;
+}
+
+.galeri > .kartu,
+.galeri figure {
+  min-width: 0;
+}
+
+/* gambar tidak melebihi wadahnya */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* tabel lebar dapat digulir sendiri */
+.table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* teks mengikuti ukuran huruf pengguna */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* tablet: galeri dua kolom */
+@media (min-width: 48rem) {
+  .galeri {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* desktop: tata letak dua kolom dan galeri tiga kolom */
+@media (min-width: 60rem) {
+  main {
+    grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+  }
+
+  .galeri {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
