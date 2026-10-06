@@ -75,3 +75,8 @@ Pada desktop, area isi menggunakan dua kolom: `16rem` dan `1fr`. Pada layar keci
 | Baris ketiga | Kaki halaman | `auto` |
 | Kolom isi | Informasi profil dan konten utama | `16rem 1fr` |
 
+## Pertemuan 8 — JavaScript Modern
+
+AI digunakan untuk membantu menjelaskan instruksi worksheet dan memberi contoh struktur JavaScript untuk objek profil, daftar proyek, fungsi murni, serta penggunaan `map`, `filter`, dan `find`.
+
+Saya sendiri menyesuaikan data profil dan proyek, memasukkan kode ke `app.js`, menjalankan halaman melalui server lokal, memeriksa hasil di Console, melakukan uji debugging, dan menyimpan perubahan ke Git.
