@@ -52,6 +52,12 @@ AI digunakan untuk membantu menjelaskan instruksi worksheet dan memberi contoh s
 
 Saya sendiri menyesuaikan data profil dan proyek, memasukkan kode ke `app.js`, menjalankan halaman melalui server lokal, memeriksa hasil di Console, melakukan uji debugging, dan menyimpan perubahan ke Git.
 
+## Pertemuan 9 — DOM Event dan Interaktivitas
+
+AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh penggunaan DOM seperti `querySelector`, `createElement`, `textContent`, `append`, `render`, event delegation, dan validasi form.
+
+Saya sendiri menerapkan dan menyesuaikan kode pada `profil.html`, `js/app.js`, `js/dom.js`, dan CSS; menguji hasilnya di browser; memperbaiki galat; serta memastikan filter dan validasi form berjalan.
+
 ## Sketsa Kerangka Halaman
 
 ~~~text
