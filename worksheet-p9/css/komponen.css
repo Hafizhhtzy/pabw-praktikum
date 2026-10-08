@@ -73,3 +73,6 @@ textarea:user-invalid {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
+.pesan-galat[hidden] {
+  display: none;
+}
