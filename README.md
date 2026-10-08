@@ -46,6 +46,12 @@ AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh dan 
 
 Saya sendiri mengisi data pribadi, daftar kegiatan dan karya, memilih warna visual, memasukkan foto dan gambar karya, menerapkan serta menyesuaikan kode, dan menguji halaman di browser.
 
+## Pertemuan 8 — JavaScript Modern
+
+AI digunakan untuk membantu menjelaskan instruksi worksheet dan memberi contoh struktur JavaScript untuk objek profil, daftar proyek, fungsi murni, serta penggunaan `map`, `filter`, dan `find`.
+
+Saya sendiri menyesuaikan data profil dan proyek, memasukkan kode ke `app.js`, menjalankan halaman melalui server lokal, memeriksa hasil di Console, melakukan uji debugging, dan menyimpan perubahan ke Git.
+
 ## Sketsa Kerangka Halaman
 
 ~~~text
@@ -74,9 +80,3 @@ Pada desktop, area isi menggunakan dua kolom: `16rem` dan `1fr`. Pada layar keci
 | Baris kedua | Isi utama halaman profil | `1fr` |
 | Baris ketiga | Kaki halaman | `auto` |
 | Kolom isi | Informasi profil dan konten utama | `16rem 1fr` |
-
-## Pertemuan 8 — JavaScript Modern
-
-AI digunakan untuk membantu menjelaskan instruksi worksheet dan memberi contoh struktur JavaScript untuk objek profil, daftar proyek, fungsi murni, serta penggunaan `map`, `filter`, dan `find`.
-
-Saya sendiri menyesuaikan data profil dan proyek, memasukkan kode ke `app.js`, menjalankan halaman melalui server lokal, memeriksa hasil di Console, melakukan uji debugging, dan menyimpan perubahan ke Git.
