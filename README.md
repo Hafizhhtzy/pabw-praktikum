@@ -58,6 +58,12 @@ AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh peng
 
 Saya sendiri menerapkan dan menyesuaikan kode pada `profil.html`, `js/app.js`, `js/dom.js`, dan CSS; menguji hasilnya di browser; memperbaiki galat; serta memastikan filter dan validasi form berjalan.
 
+## Pertemuan 10 — Fetch API dan Keadaan Antarmuka
+
+AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh penggunaan `fetch`, `async/await`, `response.ok`, `try/catch`, serta cara menampilkan keadaan memuat, berhasil, gagal, dan data kosong.
+
+Saya sendiri menyesuaikan data profil, membuat dan menerapkan kode pada `js/api.js`, `js/app.js`, dan `profil.html`, menguji halaman melalui Live Server, memeriksa hasil di Console, serta memperbaiki kesalahan yang muncul.
+
 ## Sketsa Kerangka Halaman
 
 ~~~text

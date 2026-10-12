@@ -1,8 +1,9 @@
 import { ambilData } from "./api.js";
 
-const wadah = document.querySelector("#daftar");
+const wadah = document.querySelector("#daftar-profil");
 
 function tampilkanData(data) {
+  window.tampilkanData = tampilkanData;
   wadah.textContent = "";
 
   if (data.length === 0) {
