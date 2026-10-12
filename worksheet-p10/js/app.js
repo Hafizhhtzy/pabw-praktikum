@@ -1,60 +1,77 @@
-import { ambilData } from './api.js';
+import { ambilData } from "./api.js";
 
-const wadah = document.querySelector('#daftar');
+const wadah = document.querySelector("#daftar");
+
+function tampilkanData(data) {
+  wadah.textContent = "";
+
+  if (data.length === 0) {
+    wadah.textContent = "Belum ada data.";
+    return;
+  }
+
+  data.forEach((profil) => {
+    const li = document.createElement("li");
+
+    li.textContent =
+      `${profil.nama} — NIM: ${profil.nim} — ${profil.peran}`;
+
+    wadah.append(li);
+  });
+}
 
 async function muat() {
+  wadah.textContent = "Memuat data...";
+
   try {
     const data = await ambilData();
 
-    console.log('Data dari profile.json:');
+    console.log("Data dari profile.json:");
     console.table(data);
-    const teksProfil = JSON.stringify(data[0]);
 
-    console.log(teksProfil);
-    console.log(typeof teksProfil);
+    tampilkanData(data);
   } catch (galat) {
-    console.error('Gagal di app.js:', galat.message);
+    console.error("Gagal di app.js:", galat.message);
 
-    if (wadah) {
-      wadah.textContent = `Gagal memuat data: ${galat.message}`;
-    }
+    wadah.textContent = `Gagal memuat data: ${galat.message}`;
   }
 }
 
 muat();
 
 const profil = {
-  nama: 'Muhammad Hafizh Dermawan',
-  peran: 'Mahasiswa Informatika',
-  keahlian: ['HTML', 'CSS', 'JavaScript'],
+  nama: "Muhammad Hafizh Dermawan",
+  peran: "Mahasiswa Informatika",
+  keahlian: ["HTML", "CSS", "JavaScript"],
 };
 
-const kalimat = `Nama saya ${profil.nama}, dan saya belajar ${profil.keahlian.length} hal.`;
+const kalimat =
+  `Nama saya ${profil.nama}, dan saya belajar ${profil.keahlian.length} hal.`;
 
 function buatPerkenalan({ nama, peran }) {
   return `${nama} — ${peran}`;
 }
 
-const formatKeahlian = (daftar) => daftar.join(' · ');
+const formatKeahlian = (daftar) => daftar.join(" · ");
 
 export const daftarProyek = [
   {
-    judul: 'Sistem aplikasi catering',
+    judul: "Sistem aplikasi catering",
     tahun: 2026,
     selesai: true,
-    kategori: 'web',
+    kategori: "web",
   },
   {
-    judul: 'Sistem aplikasi kasir',
+    judul: "Sistem aplikasi kasir",
     tahun: 2026,
     selesai: true,
-    kategori: 'web',
+    kategori: "web",
   },
   {
-    judul: 'Tampilan aplikasi TrashVision',
+    judul: "Tampilan aplikasi TrashVision",
     tahun: 2025,
     selesai: true,
-    kategori: 'data',
+    kategori: "data",
   },
 ];
 
@@ -67,7 +84,7 @@ const proyekTahun2026 = daftarProyek.filter(
 );
 
 const proyekKasir = daftarProyek.find(
-  (proyek) => proyek.judul === 'Sistem aplikasi kasir'
+  (proyek) => proyek.judul === "Sistem aplikasi kasir"
 );
 
 const proyekTerbaru = [...daftarProyek].sort(
