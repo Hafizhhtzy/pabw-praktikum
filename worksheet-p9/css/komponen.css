@@ -58,21 +58,20 @@ textarea:user-invalid {
 }
 
 .pesan-galat {
-  display: none;
   color: var(--color-danger);
   font-size: var(--text-sm);
 }
 
-.form-kolom:has(input:user-invalid, textarea:user-invalid) .pesan-galat {
-  display: block;
-}
+
 .lewati {
   color: var(--color-primary);
 }
+
 .aktif {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
+
 .pesan-galat[hidden] {
   display: none;
 }

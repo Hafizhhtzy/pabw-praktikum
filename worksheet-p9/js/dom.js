@@ -1,10 +1,17 @@
 import { daftarProyek } from "./app.js";
 
-console.table(daftarProyek);
-
 const barisFilter = document.querySelector("#filter");
 const wadah = document.querySelector("#daftar");
 const kosong = document.querySelector("#pesan-kosong");
+const form = document.querySelector("#kontak form");
+const tombolKirim = form.querySelector('button[type="submit"]');
+
+const kolomForm = [
+  document.querySelector("#nama"),
+  document.querySelector("#email"),
+  document.querySelector("#nim"),
+  document.querySelector("#pesan"),
+];
 
 function buatKartu(proyek) {
   const li = document.createElement("li");
@@ -34,32 +41,6 @@ function tandaiTombolAktif(tombolAktif) {
   });
 }
 
-render(daftarProyek);
-
-barisFilter.addEventListener("click", (event) => {
-  const tombol = event.target.closest("button");
-
-  if (!tombol) return;
-
-  tandaiTombolAktif(tombol);
-
-  const kategori = tombol.dataset.kategori;
-
-  const terpilih = daftarProyek.filter((proyek) => {
-    return kategori === "semua" || proyek.kategori === kategori;
-  });
-  const form = document.querySelector("#kontak form");
-const tombolKirim = form.querySelector('button[type="submit"]');
-
-const kolomForm = [
-  document.querySelector("#nama"),
-  document.querySelector("#email"),
-  document.querySelector("#nim"),
-  document.querySelector("#pesan"),
-];
-
-form.noValidate = true;
-
 function ambilPesanGalat(kolom) {
   return kolom.closest(".form-kolom").querySelector(".pesan-galat");
 }
@@ -67,17 +48,9 @@ function ambilPesanGalat(kolom) {
 function isiKolomSah(kolom) {
   const nilai = kolom.value.trim();
 
-  if (nilai === "") {
-    return false;
-  }
-
-  if (kolom.id === "email") {
-    return kolom.validity.valid;
-  }
-
-  if (kolom.id === "nim") {
-    return /^[0-9]{8}$/.test(nilai);
-  }
+  if (nilai === "") return false;
+  if (kolom.id === "email") return kolom.validity.valid;
+  if (kolom.id === "nim") return /^[0-9]{8}$/.test(nilai);
 
   return true;
 }
@@ -99,6 +72,8 @@ function perbaruiTombolKirim() {
   const sah = kolomForm.every((kolom) => isiKolomSah(kolom));
   tombolKirim.disabled = !sah;
 }
+
+form.noValidate = true;
 
 kolomForm.forEach((kolom) => {
   ambilPesanGalat(kolom).hidden = true;
@@ -123,6 +98,20 @@ form.addEventListener("submit", (event) => {
     kolomTidakSah[0].focus();
   }
 });
+
+render(daftarProyek);
+
+barisFilter.addEventListener("click", (event) => {
+  const tombol = event.target.closest("button");
+
+  if (!tombol) return;
+
+  tandaiTombolAktif(tombol);
+
+  const kategori = tombol.dataset.kategori;
+  const terpilih = daftarProyek.filter((proyek) => {
+    return kategori === "semua" || proyek.kategori === kategori;
+  });
 
   render(terpilih);
 });
