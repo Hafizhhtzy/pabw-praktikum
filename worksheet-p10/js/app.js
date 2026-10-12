@@ -8,6 +8,10 @@ async function muat() {
 
     console.log('Data dari profile.json:');
     console.table(data);
+    const teksProfil = JSON.stringify(data[0]);
+
+    console.log(teksProfil);
+    console.log(typeof teksProfil);
   } catch (galat) {
     console.error('Gagal di app.js:', galat.message);
 
