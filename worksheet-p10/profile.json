@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "nama": "Muhammad Hafizh Dermawan",
+    "nim": "25523162",
+    "kelas": "E",
+    "peran": "Mahasiswa Informatika",
+    "deskripsi": "Saya tertarik mempelajari pengembangan aplikasi web dan JavaScript."
+  },
+  {
+    "id": 2,
+    "nama": "Hafizh",
+    "nim": "25523162",
+    "kelas": "E",
+    "peran": "Pembelajar Web",
+    "deskripsi": "Sedang mempelajari fetch, async await, dan pengolahan data JSON."
+  }
+]
