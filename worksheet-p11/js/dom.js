@@ -19,17 +19,28 @@ function buatKartu(proyek) {
   return li;
 }
 
-export function render(daftar) {
+function saring(state) {
+  return state.daftarProyek.filter((proyek) => {
+    return (
+      state.kategoriAktif === "semua" ||
+      proyek.kategori === state.kategoriAktif
+    );
+  });
+}
+
+export function render(state) {
   wadah.textContent = "";
 
-  if (daftar.length === 0) {
+  const tampil = saring(state);
+
+  if (tampil.length === 0) {
     kosong.hidden = false;
     return;
   }
 
   kosong.hidden = true;
 
-  daftar.forEach((proyek) => {
+  tampil.forEach((proyek) => {
     wadah.append(buatKartu(proyek));
   });
 }

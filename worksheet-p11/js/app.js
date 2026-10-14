@@ -3,6 +3,6 @@ import { render, siapkanForm } from "./dom.js";
 import { pasangEventForm, pasangEventFilter } from "./events.js";
 
 siapkanForm();
-render(state.daftarProyek);
+render(state);
 pasangEventForm();
 pasangEventFilter();

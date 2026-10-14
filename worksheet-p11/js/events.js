@@ -1,4 +1,4 @@
-import state, { aturKategoriAktif } from "./state.js";
+import { pilihKategori } from "./state.js";
 
 import {
   barisFilter,
@@ -7,7 +7,6 @@ import {
   periksaKolom,
   perbaruiTombolKirim,
   tandaiTombolAktif,
-  render,
 } from "./dom.js";
 
 export function pasangEventForm() {
@@ -39,16 +38,7 @@ export function pasangEventFilter() {
 
     if (!tombol) return;
 
-    aturKategoriAktif(tombol.dataset.kategori);
+    pilihKategori(tombol.dataset.kategori);
     tandaiTombolAktif(tombol);
-
-    const terpilih = state.daftarProyek.filter((proyek) => {
-      return (
-        state.kategoriAktif === "semua" ||
-        proyek.kategori === state.kategoriAktif
-      );
-    });
-
-    render(terpilih);
   });
 }
