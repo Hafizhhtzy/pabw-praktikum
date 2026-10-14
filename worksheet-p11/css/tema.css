@@ -1,0 +1,45 @@
+/* Tema gelap mengikuti pengaturan sistem pengguna */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #241711;
+    --color-fg: #fff5ec;
+    --color-surface: #38251c;
+    --color-border: #927261;
+    --color-primary: #e9b083;
+    --color-danger: #ffb4ab;
+    --color-focus: #ffd166;
+    --shadow-1: 0 4px 10px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.pengalih-tema {
+  position: absolute;
+  opacity: 0;
+}
+
+.tombol-tema {
+  display: inline-block;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.pengalih-tema:focus-visible + .tombol-tema {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Pilihan manual; ditulis setelah media query agar menang */
+:root:has(#tema:checked) {
+  --color-bg: #241711;
+  --color-fg: #fff5ec;
+  --color-surface: #38251c;
+  --color-border: #927261;
+  --color-primary: #e9b083;
+  --color-danger: #ffb4ab;
+  --color-focus: #ffd166;
+  --shadow-1: 0 4px 10px rgba(0, 0, 0, 0.45);
+}
