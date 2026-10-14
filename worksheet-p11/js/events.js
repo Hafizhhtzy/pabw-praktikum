@@ -1,5 +1,4 @@
-import { daftarProyek, filterProyek } from "./data.js";
-import { ambilKategoriAktif, aturKategoriAktif } from "./state.js";
+import state, { aturKategoriAktif } from "./state.js";
 
 import {
   barisFilter,
@@ -43,7 +42,13 @@ export function pasangEventFilter() {
     aturKategoriAktif(tombol.dataset.kategori);
     tandaiTombolAktif(tombol);
 
-    const kategoriAktif = ambilKategoriAktif();
-    render(filterProyek(daftarProyek, kategoriAktif));
+    const terpilih = state.daftarProyek.filter((proyek) => {
+      return (
+        state.kategoriAktif === "semua" ||
+        proyek.kategori === state.kategoriAktif
+      );
+    });
+
+    render(terpilih);
   });
 }
