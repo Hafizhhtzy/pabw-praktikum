@@ -62,7 +62,10 @@ Saya sendiri menerapkan dan menyesuaikan kode pada `profil.html`, `js/app.js`, `
 
 AI digunakan untuk membantu menjelaskan instruksi worksheet, memberi contoh penggunaan `fetch`, `async/await`, `response.ok`, `try/catch`, serta cara menampilkan keadaan memuat, berhasil, gagal, dan data kosong.
 
+## Pertemuan 11
 Saya sendiri menyesuaikan data profil, membuat dan menerapkan kode pada `js/api.js`, `js/app.js`, dan `profil.html`, menguji halaman melalui Live Server, memeriksa hasil di Console, serta memperbaiki kesalahan yang muncul.
+
+Saya menggunakan AI sebagai pendamping belajar untuk membantu memahami konsep modul, state, localStorage, penanganan data rusak, dan pengujian melalui Console. Saya tetap menyesuaikan kode dengan proyek sendiri, menjalankan pengujian, serta memeriksa hasilnya pada halaman dan Console.
 
 ## Sketsa Kerangka Halaman
 
