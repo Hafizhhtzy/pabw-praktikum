@@ -1,22 +1,12 @@
 <script setup>
 import { computed } from 'vue'
-
-const props = defineProps({
-  proyek: {
-    type: Array,
-    required: true,
-  },
-  kategoriAktif: {
-    type: String,
-    required: true,
-  },
-})
+import { state } from '../state.js'
 
 const daftarTampil = computed(() =>
-  props.proyek.filter(
+  state.daftarProyek.filter(
     (item) =>
-      props.kategoriAktif === 'semua' ||
-      item.kategori === props.kategoriAktif,
+      state.kategoriAktif === 'semua' ||
+      item.kategori === state.kategoriAktif,
   ),
 )
 </script>
